@@ -23,7 +23,7 @@ mongoose.connect("mongodb://localhost:27017/PPL", {
 app.use("/timeline", imageRouter);
 app.use("/", userrouter);
 
-var server = app.listen(8081, function() {
+var server = app.listen(8081, function () {
     var host = server.address().address;
     var port = server.address().port;
     console.log("My server is running at http://%s:%s", host, port);
